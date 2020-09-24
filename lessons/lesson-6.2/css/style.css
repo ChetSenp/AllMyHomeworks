@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  padding: 70px 100px;
+  color: #fff;
+}
+
+.content{
+  width: 90%;
+  font-size: 0;
+  margin: 0 auto;
+}
+
+.circle{
+  background-color: #2a69a6;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+.circle:hover{
+  background-color: #fff;
+  border: 1px solid #2a69a6;
+}
+
+.circle:hover .icon{
+  display: none;
+}
+
+.circle:hover .icon_hov{
+  display: inline;
+}
+
+
+.full{
+  line-height: 95px;
+}
+
+.half{
+  line-height: 90px;
+}
+
+.column{
+  display: inline-block;
+  width: 33.33%;
+  padding: 0 20px;
+}
+.title{
+  font-family: "Proxima Nova Rg";
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+.text{
+  font-family: "Proxima Nova Lt";
+  font-size: 14px;
+  line-height: 20px;
+  color: #9d9d9d;
+  text-align: center;
+}
+
+.icon_hov{
+  display: none;
+}

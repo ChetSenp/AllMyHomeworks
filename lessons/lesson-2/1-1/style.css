@@ -1,0 +1,9 @@
+#raz1:checked + label,
+#raz2:checked + label,
+#raz3:checked + label,
+#raz4:checked + label,
+#sweet1:checked + label,
+#sweet2:checked + label,
+#sweet3:checked + label {
+text-decoration: line-through;
+}

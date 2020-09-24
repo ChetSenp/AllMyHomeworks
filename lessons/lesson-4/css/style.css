@@ -1,0 +1,46 @@
+.wraper {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+  background-color: #a52a2a;
+}
+
+.block {
+  width: 100%;
+}
+
+.block img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 2% auto;
+  font-size: 18px;
+}
+
+.imgs {
+  text-align: center;
+}
+
+.imgs img {
+  border-style: dashed;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin: 4% 0 0 0;
+}
+
+a {
+  text-decoration: none;
+}
