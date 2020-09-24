@@ -1,2 +1,0 @@
-# AllMyHomeworks
-All my homeworks
