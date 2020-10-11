@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Miso";
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #fdde7e;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fdde7e;
+  width: 80%;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.cupBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.smoke {
+  position: relative;
+  top: 15px;
+}
+
+.bean {
+  position: relative;
+  z-index: 1;
+  bottom: -35px;
+}
+
+.cup {
+  position: relative;
+  top: -27px;
+  left: 9px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25%;
+  color: #333333;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: "Miso Bold";
+  color: #02995b;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 25px;
+  letter-spacing: 0.25px;
+}
+
+.content:nth-child(2) {
+  align-self: stretch;
+}
+
+@font-face {
+  font-family: "Miso";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../font/miso/Miso"), url("../font/miso/miso.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Miso Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("../font/miso/Miso Bold"),
+    url("../font/miso/miso-bold.woff") format("woff");
+}
