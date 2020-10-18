@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+body{
+  width: 100%;
+}
+/*        HOME         */
+
+.home{
+  width: 100%;
+  height: 1000px;
+  background: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -80px;
+}
+
+.home_header{
+  
+
+  height: 150px;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/*  NAV  */
+.home_nav{
+  list-style: none;
+  text-transform: uppercase;
+  
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_item{
+  margin-right: 30px;
+  position: relative;
+}
+
+.nav_item:before{
+  content: "";
+  
+  height: 2px;
+  width: 100%;
+  top: -5px;
+  background: #ff6033;
+  position: absolute;
+
+  z-index: 1;
+  display: none;
+
+}
+
+.nav_item:hover:before{
+  display: block;
+}
+
+.nav_link{
+  text-decoration: none;
+  
+  color: #000; 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*  CONTENT  */
+.content{
+  width: 360px;
+  height: 250px;
+  margin: 220px 7.5%;
+
+}
+
+
+.text{
+}
+
+
+.content_header{
+  margin-bottom: 35px;
+  font-weight: 900;
+  font-size: 60px;
+  color: #262626;
+  
+}
+
+.content_text{
+  margin-left: 2px;
+  color:#262626 ;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+
+.button{
+  width: 200px;
+  height: 55px;
+  background-color: #ff6033;
+  border: 0;
+  box-shadow: 0 3px 7px 0 #000000;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.button:hover{
+  width: 205px;
+  height: 60px;
+  box-shadow: none;
+}
+.button:active{
+  border: none;
+  background: red;
+}
+
+
+/* FOOTER */
+
+.scroll{
+  width: 24px;
+  margin: 0 auto;
+}
+
+.img_scroll:hover .img{
+  width: 30px;
+  
+}
+
+
+
+
+/*           ABOUT         */
+
+.about{
+  background: url("../img/about_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about_inner{
+  display: flex;
+  justify-content: space-around;
+}
+
+.img_cup{
+  width: 550px;
+  height: 550px;
+}
+
+
+
+.about_header{
+  margin-top: 115px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  font-size: 80px;
+  color: #fff;
+
+}
+
+.about_text{
+  width: 545px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 17px;
+}
+.about_text1{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
