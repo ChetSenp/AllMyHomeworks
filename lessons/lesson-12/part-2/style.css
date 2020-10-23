@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #262626;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+.wrapper{
+  height: 860px;
+  width: 100%;
+  
+  background: url("./img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.header{
+  width: 355px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header_title{
+  padding-top: 50px;
+  margin-bottom: 20px;
+  font-size: 90px;
+  font-weight: 700;
+  
+}
+.header_suptitle{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.content_containers{
+  margin: 0 auto;
+  display: flex;
+  width: 1100px;
+  height: 500px;
+  justify-content: space-between;
+}
+.left_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left_container input,
+.left_container textarea{
+  background-color: #68d3d6;
+  color: #fff;
+  font-size: 16px;
+  width: 500px;
+  height: 50px;
+  border: none;
+  outline: none;
+  text-indent: 20px;
+  border-left: 4px ;
+  border-color: #68d3d6;
+  border-left-style: solid;
+  opacity: .75;
+
+}
+.left_container textarea{
+  height: 200px;
+  padding-top: 20px;
+  resize: none;
+}
+
+.left_container input::placeholder,
+.left_container textarea::placeholder{
+  color: #fff;
+  font-size: 14px;
+}
+
+.left_container input:focus,
+.left_container textarea:focus{
+  background: #00c4c4;
+  border-left: 4px ;
+  border-color:  #355b82;
+  border-left-style: solid;
+}
+
+.content_info{
+  text-align: left;
+  width: 500px;
+}
+
+.text_2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+.content_info{
+  height: 50px;
+}
+
+.info_title{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.info_text{
+font-weight: 300;
+}
+
+
+footer{
+  height:75px;
+  width: 100%;
+  background: #262626;
+
+}
+.last_info{
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.company{
+  font-weight: 300;
+  color: #b9b9b9;
+  font-size: 16px;
+
+}
+
+.company_name{
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #b9b9b9;
+}
+
+.footer_text{
+  font-weight: 300;
+  color: #b9b9b9;
+  font-size: 16px;
+}
+
+.footer_link{
+  text-decoration: none;
+  color: #ff2b58;
+  font-weight: 700;
+  font-size: 16px;
+}
