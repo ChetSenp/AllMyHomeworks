@@ -148,6 +148,24 @@ margin-top: 50px;
   position: relative;
 
 }
+.services_inner::after,
+.services_inner::before{
+  content: "";
+  height: 3px;
+  width: 26%;
+  background: #fff;
+}
+
+.services_inner::after{
+  position: absolute;
+  top: 0;
+  left: -1px;
+}
+.services_inner::before{
+  top: 0;
+  right: -1px;
+  position: absolute;
+}
 
 .services_head{
 
@@ -166,24 +184,7 @@ margin-top: 50px;
   font-size: 34px;
 }
 
-.services_title:after,
-.services_title:before{
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  width: 39%;
-	height: 4px;
-  background: #fff;
-  margin: 0 200px;
-}
 
-.services_title:before{
-  margin-left: -100%;
-}
-
-.services_title:after{
-  margin-right: -100%;
-}
 
 .services_text{
   margin-top: 75px;
