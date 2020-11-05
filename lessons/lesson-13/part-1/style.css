@@ -296,7 +296,7 @@ margin-top: 50px;
 
 
 
-.link_text a{
+.link_text {
   text-decoration: none;
   color: #fff;
 
