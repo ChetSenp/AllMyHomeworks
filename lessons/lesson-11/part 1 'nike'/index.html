@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b0a139f527.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="product-card">
+            <div class="nike_logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <div class="card_content">
+                <div class="product">
+                    <div class="shoes_image">
+                        <img src="img/shoe.png" alt="shoes">
+                    </div>
+
+                    <div class="shoes_color color">
+                        <input class="color__input" id="blue" name="color" type="radio" checked>
+                        <label class="color__label" for="blue"></label>
+
+                        <input class="color__input" id="white" name="color" type="radio">
+                        <label class="color__label" for="white"></label>
+
+                        <input class="color__input" id="red" name="color" type="radio">
+                        <label class="color__label" for="red"></label>
+
+                        <input class="color__input" id="cyan" name="color" type="radio">
+                        <label class="color__label" for="cyan"></label>
+                    </div>
+                </div>
+
+                <div class="shoes_name">
+                    <h1 class="shoes_header">Nike SB Stefan Janoski Max</h1>
+                    <p class="shoes_text">Unisex Skateboarding Shoe </p>
+
+                    <div class="shoes_rating">
+                      <div class="rating-area">
+                        <input type="radio" id="star-5" name="rating" value="5">
+                        <label for="star-5" title="5"></label>
+                        <input type="radio" id="star-4" name="rating" value="4">
+                        <label for="star-4" title="4"></label>    
+                        <input type="radio" id="star-3" name="rating" value="3">
+                        <label for="star-3" title="3"></label>  
+                        <input type="radio" id="star-2" name="rating" value="2">
+                        <label for="star-2" title="2"></label>    
+                        <input type="radio" id="star-1" name="rating" value="1">
+                        <label for="star-1" title="1"></label>
+                      </div>
+                    </div>
+
+                    <form class="shoes_order">
+                        <div class="wrapper">
+                            <div class="shoes_param">
+                                <select class="shoes_select" name="size" id="size">
+                                    <option value="40">40</option>
+                                    <option value="41">41</option>
+                                    <option value="42">42</option>
+                                    <option value="43">43</option>
+                                    <option value="44">44</option>
+                                    <option value="45">45</option>
+                                    <option value="46">46</option>
+                                </select>
+                                <label class="shoes_label" for="size">Size <i
+                                        class="fa fa-chevron-down"></i></label>
+                            </div>
+
+                            <div class="shoes_param">
+                                <select class="shoes_select" name="qty" id="qty">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                                <label class="shoes_label" for="qty">Qty <i
+                                        class="fa fa-chevron-down"></i></label>
+                            </div>
+                        </div>
+                        <button class="btn" type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

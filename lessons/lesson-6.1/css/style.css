@@ -1,4 +1,5 @@
 *{
+  box-sizing: border-box;
   margin: 0;
   transition: all .1s ease-in;
 }
@@ -53,14 +54,28 @@ li:nth-child(even):hover{
 li:hover::after{
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   width: 800px;
   height: 4px;
   background-color: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+li:hover::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 4px;
+  background-color: #fff;
+  left: 0;
+  bottom: 40px;
 }
 
 
 li{
+  position: relative;
   padding-top: 15px;
   padding-left: 20px;
   margin-left: 200px;
@@ -102,6 +117,7 @@ li:nth-child(even){
 
 
 .btn{
+  margin-top: 40px;
   margin-left: 240px;
   width: 800px;
   height: 75px;

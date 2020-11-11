@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sign_container">
+      <div class="sign_form">
+        <input type="radio" class="login_input" name="tabs" id="sign-in" checked>
+        <label for="sign-in" class="login_label">Sign in</label>
+
+        <input type="radio" class="login_input" name="tabs" id="join-us">
+        <label for="join-us" class="login_label">Join us</label>
+
+        <div class="log_in_tabs">
+          <form class="sign_in_tab tab">
+            <div>
+              <label class="tab_label" for="sign-in_name">Username</label>
+              <input class="tab_input" type="text" name="first_name" id="sign-in_name">
+              <div class="error">error</div>
+            </div>
+            <div>
+              <label class="tab_label" for="sign-in_password">password</label>
+              <input class="tab_input" type="password" id="sign-in_password" name="password">
+              <div class="error">error</div>
+            </div>
+
+            <div>
+              <input type="checkbox" class="tab_check" id="tab_check">
+              <label for="tab_check" class="check_label" name="sign-in_check">Keep me signed in</label>
+            </div>
+            
+            <button class="btn sign-in_btn" type="submit">sign in</button>
+          
+            <div class="links_container">
+              <p class="links">Forgot password</p>
+              <p class="links">Create an account</p>
+            </div>
+          </form>
+
+          <form class="join_us_tab tab">
+            <div>
+              <label class="tab_label" for="email">Email</label>
+              <input class="tab_input" type="email" id="email" required>
+              <div class="tab__error">error</div>
+          </div>
+
+          <div>
+              <label class="tab_label" for="join-us_name">Username</label>
+              <input class="tab_input" type="text" id="join-us_name" minlength="3" required>
+              <div class="tab__error">error</div>
+          </div>
+
+          <div>
+              <label class="tab_label" for="join-us_pass">Password</label>
+              <input class="tab_input" type="password" id="join-us_pass" minlength="8" required>
+              <div class="tab__error">error</div>
+          </div>
+
+          <div>
+              <label class="tab_label" for="join-us_pass-rep">Repeat password</label>
+              <input class="tab_input" type="password" id="join-us_pass-rep" minlength="8" required>
+              <div class="tab__error">error</div>
+          </div>
+
+          <button class="btn" type="submit">Join us</button>
+          </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

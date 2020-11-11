@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'MuseoSansRounded';
+  src: url('fonts/MuseoSansRounded-100.eot?#iefix') format('embedded-opentype'),
+  url('fonts/MuseoSansRounded-100.eot') format('eot'),
+  url('fonts/MuseoSansRounded-100.ttf') format('truetype'),
+  url('fonts/MuseoSansRounded-100.woff') format('woff'),
+  url('fonts/MuseoSansRounded-100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'MuseoSansRounded';
+}
+
+.card {
+  width: 100vw;
+   height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("img/bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  width: 85%;
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: #111a28;
+}
+
+.nike_logo {
+  padding: 20px;
+}
+
+.card_content {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.shoes_image {
+  padding: 70px 0;
+}
+
+.color__label:hover{
+  width: 12px;
+  height: 12px;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color__input {
+  visibility: hidden;
+  width: 0;
+}
+
+.color__label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.color__label[for="cyan"] {
+  background-color: #29e3ea;
+}
+
+.color__label[for="red"] {
+  background-color: #ed3333;
+}
+
+.color__label[for="white"] {
+  background-color: #fff;
+}
+
+.color__label[for="blue"] {
+  background-color: #1f273f;
+}
+
+.color__input:checked + .color__label {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #7e838b;
+}
+
+.shoes_name {
+  width: 30%;
+  color: #e1e1e1;
+}
+
+.shoes_header {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+
+.shoes_text {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.shoes_rating {
+  padding: 25px 0;
+}
+.rating-area {
+  overflow: hidden;
+  width: 225px;
+  margin-left:;
+}
+.rating-area:not(:checked) > input {
+  display: none;
+}
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 42px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 30px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+  content: '★';
+}
+.rating-area > input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: gold;
+  text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+  position: relative;
+}
+.wrapper {
+  width: 100%;
+}
+
+.shoes_param {
+  width: 35%;
+  margin-right: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.shoes_select {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #7e838b;
+  background: #111a28;
+  color: #fff;
+}
+
+
+.shoes_label {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7e838b;
+  font-size: 14px;
+}
+
+.fa {
+  font-size: 10px;
+  color: #7e838b;
+  display: inline-block;
+  padding-left: 20%;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: #202835;
+  border: 1px solid #7e838b;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.btn:hover{
+  background-color: #000000;
+}
+
+
+
+
+

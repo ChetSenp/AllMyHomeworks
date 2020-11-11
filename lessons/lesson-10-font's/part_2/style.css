@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url("fonts/Proxima_Nova_Regular.otf") format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Heavy';
+    src: url("fonts/FuturaDemiC.eot"),
+    url("fonts/FuturaDemiC.ttf") format("truetype"),
+    url("fonts/FuturaDemiC.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-underline:before {
+    display: block;
+    transform: translateY(2px);
+}
+
+body {
+    background-color: #464f54;
+}
+
+.content{
+    margin: 100px auto 0 auto;
+    padding-left: 65px;
+    width: 90%;
+    background-color: #fff;
+    position: relative;
+}
+
+.content__instruments {
+    width: 85%;
+    position: absolute;
+    top: -15%;
+    right: -5.5%;
+}
+
+.content__entry {
+    padding: 50px 0 50px 60px;
+    background-color: #181818;
+}
+
+.content__entry label {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Regular';
+    letter-spacing: 5px;
+    color: #767676;
+}
+
+.content__entry input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #303030;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 70px;
+    color: #fff;
+}
+
+.content__entry input:focus {
+    outline: none;
+}
+
+.content__toolbar {
+    width: 90%;
+    float: right;
+    background-color: #fbc02d;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.content__toolbar-item {
+    list-style-type: none;
+    margin: 20px 15px;
+}
+
+.content__toolbar-item input {
+    visibility: hidden;
+    width: 0;
+}
+
+.content__toolbar-item label img,
+.content__toolbar-item label i {
+    opacity: 0.5;
+}
+
+.content__toolbar-item label:hover img,
+.content__toolbar-item label:hover i,
+.content__toolbar-item input:checked + label i {
+    opacity: 1;
+}
+
+.format-size {
+    position: relative;
+}
+
+.format-size select {
+    opacity: 0;
+    z-index: 1;
+    height: 100%;
+}
+
+.format-size select {
+    position: absolute;
+    left: 0;
+}
+
+.format-size:hover img {
+    opacity: 1;
+}
+
+.content__toolbar-item i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.content__text {
+    padding-top: 190px;
+    padding-left: 55px;
+    border-left: 2px solid #e8eced;
+}
+
+.content__text p:first-child {
+    font-family: 'Proxima Nova Regular';
+    color: #b4b4b4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.content__text h1 {
+    font-family: 'Futura Heavy';
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.content__text h1 + p {
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    color: #8f8f8f;
+}
+
+.content__text-p {
+    margin-top: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.content__text-p span {
+    font-style: italic;
+}
+
+.content__text-p:last-child {
+    padding-bottom: 30px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0a139f527.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="content">
+        <div class="content__instruments">
+            <div class="content__entry">
+                <div>
+                    <label for="title">title</label>
+                </div>
+
+                <input type="text" id="title" value="Like Tears In Ra|">
+            </div>
+
+            <ul class="content__toolbar">
+                <li class="content__toolbar-item">
+                    <input type="color" id="color" name="color">
+                    <label for="color"><img src="img/format_color.png" alt="format color"></label>
+                </li>
+
+                <li class="content__toolbar-item format-size">
+                    <select id="size">
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="14">14</option>
+                        <option value="16">16</option>
+                        <option value="18">18</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="24">24</option>
+                        <option value="26">26</option>
+                        <option value="28">28</option>
+                        <option value="36">36</option>
+                        <option value="48">48</option>
+                        <option value="72">72</option>
+                    </select>
+
+                    <label for="size"><img src="img/format_size.png" alt="format size"></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="file" id="file">
+                    <label for="file"><i class="fas fa-image"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="checkbox" id="bold">
+                    <label for="bold"><i class="fas fa-bold"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="checkbox" id="italic">
+                    <label for="italic"><i class="fas fa-italic"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="checkbox" id="underline">
+                    <label for="underline"><i class="fas fa-underline"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="radio" id="align-justify" name="align">
+                    <label for="align-justify"><i class="fas fa-align-justify"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="radio" id="align-left" name="align" checked>
+                    <label for="align-left"><i class="fas fa-align-left"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="radio" id="align-center" name="align">
+                    <label for="align-center"><i class="fas fa-align-center"></i></label>
+                </li>
+
+                <li class="content__toolbar-item">
+                    <input type="radio" id="align-right" name="align">
+                    <label for="align-right"><i class="fas fa-align-right"></i></label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content__text">
+            <p>Roy Batty, 2019</p>
+
+            <h1>Like Tears in Rain</h1>
+
+            <p>Where am I going? How long have I got?</p>
+
+            <p class="content__text-p">I've seen things you people wouldn't believe. Attack ships on fire off the
+                shoulder of Orion. I watched
+                C-beams glitter in the dark near the Tannhauser gate. All those moments will be lost in time... like
+                tears in rain... <span>Time to die</span>.</p>
+
+            <p class="content__text-p">I don't know why he saved my life. Maybe in those last moments he loved life more
+                than he ever had
+                before. Not just his life - anybody's life; my life. All he'd wanted were the same answers...</p>
+        </div>
+    </section>
+</body>
+
+</html>
