@@ -1,0 +1,34 @@
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+    max-width: 800px;
+  }
+  body .home {
+    width: 100%;
+    max-width: 800px;
+    background-size: cover;
+  }
+  body .home .burger {
+    display: none;
+  }
+  body .home .burger_container {
+    position: relative;
+    width: 25px;
+    height: 4px;
+    background-color: black;
+  }
+  body .home .burger_container:after,
+body .home .burger_container:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: black;
+  }
+  body .home .burger_container:before {
+    top: 8px;
+  }
+  body .home .burger_container:after {
+    bottom: 8px;
+  }
+}

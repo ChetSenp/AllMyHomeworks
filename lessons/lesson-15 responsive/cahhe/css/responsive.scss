@@ -1,0 +1,95 @@
+@media screen and(max-width: 800px){
+  body{
+    width: 100%;
+    max-width: 800px;
+      .home{
+        width: 100%;
+        max-width: 800px;
+        background-size: cover;
+    
+        .burger_container{
+          position: relative;
+          width: 25px;
+          height: 4px;
+          background-color: black;
+        
+        }
+    
+        .burger_container:after,
+        .burger_container:before{
+          content: "";
+          position: absolute;
+          height: 4px;
+          width: 100%;
+          
+          background-color: black;
+          
+        }
+        .burger_container:before{
+          top: 8px;
+        }
+    
+        .burger_container:after{
+          bottom: 8px;
+        }
+        .burger:not(:checked) + label{
+          margin-top: 30px;
+          float: right;
+          
+          }
+          .burger{
+          visibility: hidden;
+          }
+      
+          .burger:not(:checked) ~ .menu_list{
+            display: none;
+            justify-content: flex-start;
+          }
+      
+          
+          .burger:checked + .burger_name > .burger_container:after{
+            transform:rotateZ(45deg);
+            background-color: #fff;
+            top: 1px;
+            transition: .6s;
+          }
+      
+          .burger:checked + .burger_name > .burger_container:before{
+             transform:rotateZ(-45deg);
+             background-color: #fff;
+            top: 1px;
+            transition: .6s;
+          }
+      
+          .burger:checked + .menu_list > .menu_link{
+            transform: translate(0);
+            
+          }
+      
+          .burger:checked + .burger_name{
+            margin-top: 30px;
+            float: right;
+            color: #fff;
+          }
+          .burger:checked ~ .menu_list{
+            color: #fff;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: flex-end;
+            
+          }
+          
+          
+      
+          .burger:checked ~ .bg_check{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            background-color: black;
+            z-index: -1;
+          }
+        }
+      }
+  }
+}
