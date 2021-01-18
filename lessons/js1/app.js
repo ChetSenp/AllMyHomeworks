@@ -4,7 +4,7 @@
 //SECOND
 
 const whatYearNow = 2020;
-let whatPersonBirthYear - ;
+let whatPersonBirthYear;
 
 //Task 1
 
